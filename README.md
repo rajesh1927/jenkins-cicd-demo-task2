@@ -48,7 +48,7 @@ Node.js Application
 
 ## Run Jenkins
 
-```bash
+
 docker compose up -d --build
 
 Jenkins:
@@ -61,29 +61,10 @@ Verify Containers
 docker ps
 Stop Jenkins
 docker compose down
-Author
+
+## Author
 
 Rajesh Maurya
 
 
----
 
-# 24. Final repository
-
-Your GitHub repository should look like:
-
-```text
-jenkins-cicd-demo/
-│
-├── app.js
-├── package.json
-├── package-lock.json
-├── Dockerfile
-├── Jenkins.Dockerfile
-├── docker-compose.yml
-├── Jenkinsfile
-├── .dockerignore
-├── .gitignore
-└── README.md
-
-This gives you a complete implementation of the uploaded Task 2: Create a Simple Jenkins Pipeline for CI/CD, including the requested Jenkinsfile, build/test/deploy stages, Docker usage, commit-triggered pipeline concept, testing, and GitHub submission structure.
