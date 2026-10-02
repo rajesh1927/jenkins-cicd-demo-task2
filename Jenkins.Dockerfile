@@ -3,9 +3,12 @@ FROM jenkins/jenkins:lts-jdk21
 USER root
 
 RUN apt-get update \
-    && apt-get install -y docker.io \
+    && apt-get install -y \
+       docker.io \
+       nodejs \
+       npm \
     && rm -rf /var/lib/apt/lists/*
 
-RUN usermod -aG docker jenkins
+RUN node --version && npm --version && docker --version
 
 USER jenkins

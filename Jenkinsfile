@@ -9,16 +9,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                echo 'Checking out source code...'
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Installing dependencies...'
+                sh 'node --version'
+                sh 'npm --version'
                 sh 'npm ci'
             }
         }
@@ -57,7 +52,6 @@ pipeline {
                 """
             }
         }
-
     }
 
     post {
