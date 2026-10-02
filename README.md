@@ -62,6 +62,9 @@ docker ps
 Stop Jenkins
 docker compose down
 
+## Screenshot
+[screenshot](https://github.com/rajesh1927/jenkins-cicd-demo-task2/blob/main/screenshot_task2.pdf)
+
 ## Author
 
 Rajesh Maurya
